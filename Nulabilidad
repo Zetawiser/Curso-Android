@@ -1,0 +1,9 @@
+package com.zetawise.androidmaster
+
+fun main(){
+    var name: String? = "Zetawise"
+    // Opcion 1 para que funcione
+    println(name !! [5])
+    // Opcion 2 para que funcione
+    println(name?. get(5) ?: "Es null" )
+}
