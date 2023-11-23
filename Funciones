@@ -1,0 +1,113 @@
+package com.zetawise.androidmaster
+
+val age: Int = 21
+
+fun main(){
+    showMyName()
+    showMyAge(currentAge = 21)
+    add(25,76)
+    val mySubtract = subtract(10, 5)
+    println(mySubtract)
+}
+
+fun showMyName(){
+    println("My nick name is Zetawise")
+}
+
+fun showMyAge(currentAge: Int = 41){
+    println("My age is $currentAge")
+}
+
+fun add(firstNumber: Int, secondNumber: Int){
+    println(firstNumber + secondNumber)
+}
+
+fun subtract(firstNumber: Int, secondNumber: Int): Int{
+    return firstNumber - secondNumber
+}
+// Para funciones pequeñas se puede quitar las llaves
+fun subtract2(firstNumber: Int, secondNumber: Int) = firstNumber - secondNumber
+
+
+fun variablesBoolean(){
+    //Boolean
+    val booleanExample: Boolean = true
+    val booleanExample2: Boolean = false
+}
+
+fun variablesAlfaNumericas(){
+    //VARIABLES ALFANUMERICAS
+
+    //Char
+    val charExample1: Char = 'i'
+    val charExample2: Char = '2'
+    val charExample3: Char = '*'
+
+    //String
+    val stringExample: String = "Zetawise"
+    val stringExample2: String = "4"
+    val stringExample3: String = "23"
+
+    //Concatenar
+    println(stringExample2 + stringExample3)
+
+    var stringConcatenada: String = "Hola"
+
+    //Para llamar una variable se usa el signo $
+    stringConcatenada = "Hola me llamo $stringExample y tengo $age años"
+    println(stringConcatenada)
+
+    //Convertit la edad a un str, se especifica en alguno de los dos lados
+    var Example123: String = age.toString()
+    println(Example123)
+}
+
+fun variablesNumericas(){
+
+//VARIABLES NUMERICAS
+
+    //Int
+    var age2: Int = 21
+
+    age2 = 29
+
+
+    //Long
+    val example: Long = 30
+    val example2: Int = 30
+
+    //Float (Menos carácteres)
+    val decimal: Float = 3.14f
+
+    //Doule (Mas carácteres para un numero preciso)
+    val doubleExample: Double = 12.5555
+
+
+
+    //Println es para imprimir en una linea nueva "ln"
+
+   println(age)
+   println(age2)
+
+   println("Sumar: ")
+   println(age + age2)
+
+   println("Restar: ")
+   println(age - age2)
+
+   println("Multiplicar: ")
+   println(age * age2)
+
+   println("Dividir: ")
+   println(age2 / age)
+
+   println("Modulo: ")
+   println(age2 % age)
+
+    println(age + example)
+    println(age + decimal)
+
+    //Para convertir un dato en algo es: toInt seria a entero
+    var exampleSuma = age + decimal.toInt()
+    println(exampleSuma)
+}
