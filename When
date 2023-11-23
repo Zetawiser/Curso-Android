@@ -38,7 +38,8 @@ fun getTrimester(month:Int){
     }
 }
 
-fun getSemester(month: Int): = when(month){
+fun getSemester(month: Int): String{
+    val result = when(month){
         // in.. es el rango
         in 1 .. 6->  "Primer semestre"
         in 7 .. 12 ->  "Segundo semestre"
@@ -46,6 +47,8 @@ fun getSemester(month: Int): = when(month){
         !in 1 .. 12 ->  "Ingrese una busqueda valida"
         else -> "Nada"
     }
+    return result
+}
 
 fun result(value: Any){
     // Any es cualquier cosa
