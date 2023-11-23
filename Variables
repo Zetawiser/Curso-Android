@@ -30,7 +30,12 @@ fun main(){
    val charExample3: Char = '*'
 
    //String
-   val stringExample: String = "Texto en comillas dobles"
+   val stringExample: String = "Zetawise"
+   val stringExample2: String = "4"
+   val stringExample3: String = "23"
+
+
+
 
    //Boolean
    val booleanExample: Boolean = true
@@ -38,8 +43,45 @@ fun main(){
 
    //Println es para imprimir en una linea nueva "ln"
 
-   println(age)
-   println(age2)
-   print(charExample1)
+//   println(age)
+//   println(age2)
+//   println(charExample1)
+//
+//   println("Sumar: ")
+//   println(age + age2)
+//
+//   println("Restar: ")
+//   println(age - age2)
+//
+//   println("Multiplicar: ")
+//   println(age * age2)
+//
+//   println("Dividir: ")
+//   println(age2 / age)
+//
+//   println("Modulo: ")
+//   println(age2 % age)
+
+   println(age + example)
+   println(age + decimal)
+
+ //Para convertir un dato en algo es: toInt seria a entero
+   var exampleSuma = age + decimal.toInt()
+   println(exampleSuma)
+
+   //Concatenar
+   println(stringExample2 + stringExample3)
+
+   var stringConcatenada: String = "Hola"
+
+   //Para llamar una variable se usa el signo $
+   stringConcatenada = "Hola me llamo $stringExample y tengo $age años"
+   println(stringConcatenada)
+
+   //Convertit la edad a un str, se especifica en alguno de los dos lados
+   var Example123: String = age.toString()
+   println(Example123)
+
+
 
 }
