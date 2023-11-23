@@ -1,0 +1,45 @@
+package com.zetawise.androidmaster
+
+fun main(){
+
+//VARIABLES NUMERICAS
+
+   //Int
+   val age: Int = 21
+   var age2: Int = 21
+
+   age2 = 29
+
+
+   //Long
+   val example: Long = 30
+   val example2: Int = 30
+
+   //Float (Menos carácteres)
+   val decimal: Float = 3.14f
+
+   //Doule (Mas carácteres para un numero preciso)
+   val doubleExample: Double = 12.5555
+
+
+   //VARIABLES ALFANUMERICAS
+
+   //Char
+   val charExample1: Char = 'i'
+   val charExample2: Char = '2'
+   val charExample3: Char = '*'
+
+   //String
+   val stringExample: String = "Texto en comillas dobles"
+
+   //Boolean
+   val booleanExample: Boolean = true
+   val booleanExample2: Boolean = false
+
+   //Println es para imprimir en una linea nueva "ln"
+
+   println(age)
+   println(age2)
+   print(charExample1)
+
+}
