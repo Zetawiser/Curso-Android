@@ -1,0 +1,86 @@
+package com.zetawise.androidmaster
+
+fun main(){
+    ifBasic()
+    ifAnidado()
+    ifBoolean()
+    ifInt()
+    ifMultiple()
+    ifMultipleOr()
+}
+
+fun ifMultipleOr(){
+    var pet = "dog"
+    var imHappy = true
+
+    // El signo || es un or o un o
+    if((pet == "dog") || (pet == "cat" && imHappy)) {
+        println("Es un perro o un gato")
+    }
+}
+
+fun ifMultiple(){
+    var age = 18
+    var cc = false
+    var imHappy = true
+
+    // El signo && es un and o un y
+    if(age >= 18 && cc && imHappy){
+        println("Puedo beber cerveza")
+    }
+    else{
+        println("No puedo beber cerveza")
+    }
+}
+
+fun ifInt(){
+    var age = 29
+    if (age >= 18){
+        println("Ya bebe cerveza")
+    }
+    else{
+        println("Beber un jugo")
+    }
+}
+
+// If anidado es un listado de condiciones
+fun ifAnidado(){
+    val animal = "bird"
+
+    if (animal == "dog") {
+        println("Es un perrito")
+    }
+    else if (animal == "cat") {
+            println("Es un gatito")
+    }
+    else if (animal == "bird") {
+        println("Es un pajarito")
+    }
+    else{
+        println("No es uno de los animales esperados")
+
+    }
+}
+
+fun ifBoolean(){
+    var soyFeliz: Boolean = false
+    // Sin nada es = True
+    // El signo ! significa que es lo contrario
+    if (!soyFeliz){
+        println("Estoy triste :(")
+    }
+    else{
+        println("Estoy feliz")
+    }
+}
+
+fun ifBasic(){
+    val name = "Zetawise"
+
+    if (name == "Zetawise"){
+        println("Oye el valor name es Zetawise")
+    }
+    else {
+        println("Este no es Zetawise")
+    }
+}
