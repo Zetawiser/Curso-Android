@@ -1,0 +1,38 @@
+package com.zetawise.androidmaster
+
+fun main() {
+    var name: String = "Zetawise"
+
+    val weekDays = arrayOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+
+    // Reemplazar valores
+    weekDays[0] = "Festivo"
+
+    println(weekDays[0])
+
+    // Size es para el tamaño del array
+    println(weekDays.size)
+
+    if (weekDays.size >= 8) {
+        println(weekDays[7])
+    } else {
+        println("No hay mas valores en el Array")
+    }
+
+    // Bucles para Arrays
+
+    // Posición por cada uno de los indices
+    for (position in weekDays.indices) {
+        //println("He pasado por aqui $position")
+        println(weekDays[position])
+    }
+
+    // Para mostrar la posición y el valor
+    for((position, value) in weekDays.withIndex()){
+        println("La posición $position, contiene $value")
+    }
+
+    for(name in weekDays){
+        println("Ahora es $name")
+    }
+}
