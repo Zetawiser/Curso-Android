@@ -1,0 +1,62 @@
+package com.zetawise.androidmaster
+
+fun main(){
+//    inmutableList()
+    mutableList()
+}
+
+fun mutableList() {
+    val weeks: MutableList<String> = mutableListOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+
+    // Agregar un valor a la lista en la ultima posición
+    weeks.add("Zetawise")
+    println(weeks)
+
+    // Agregar un valor a la lista en la posición que desee
+    weeks.add(0, "Coki")
+    println(weeks)
+
+    // Si la lista esta vacia
+    if(weeks.isEmpty()){
+    println("No va a imprimir nada")
+    }
+    else{
+        weeks.forEach { println(it) }
+    }
+
+    if(weeks.isNotEmpty()) {
+        weeks.forEach { println(it) }
+    }
+
+    println(weeks.last())
+
+}
+
+fun inmutableList(){
+    val readOnly: List<String> = listOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+
+    // Imprimir el tamaño de la lista
+    println(readOnly.size)
+
+    //Imprime el listado completo
+    println(readOnly)
+
+    //Imprime la posición
+    println(readOnly[0])
+
+    //Imprime el ultimo valor (last)
+    println(readOnly.last())
+
+    //Imprime el primer valor (last)
+    println(readOnly.first())
+
+    //Filtra los valores que tengan una "a"
+    val example = readOnly.filter { it.contains("a") }
+    println(example)
+
+    // Le doy el nombre a la busqueda "weekDay"
+    // Imprime la lista por cada elemento
+    readOnly.forEach { weekDay -> println(weekDay) }
+
+
+}
